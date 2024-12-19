@@ -1,0 +1,16 @@
+<div class="fullscreen-container">
+  <iframe
+    class="cocreators-frame"
+    src="https://map.co-creators.website/"
+  >
+  </iframe>
+
+  <button
+    *ngIf="showInstallButton"
+    (click)="installPwa()"
+    class="install-button"
+  >
+    Install App
+  </button>
+</div>
+<router-outlet />
